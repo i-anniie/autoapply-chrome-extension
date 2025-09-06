@@ -1,3 +1,17 @@
+> ⚠️ **DEVELOPMENT WARNING & LEGAL DISCLAIMER**
+>
+> This version of the extension is still in development. You may encounter bugs or incomplete features. As development is ongoing, you must use this tool at your own risk. The developers are not responsible for any outcomes, issues, or damages resulting from its use.
+>
+> **Legal Disclaimer:**
+>
+> - This tool is for educational and personal use only.
+> - It is not affiliated with, endorsed by, or supported by LinkedIn or any third party.
+> - Use of this tool may violate LinkedIn’s Terms of Service and could result in account restrictions, bans, or other consequences.
+> - The user assumes all responsibility and risk for using the tool.
+> - The developers disclaim all liability for any consequences, including but not limited to account bans, data loss, or legal actions.
+> - No user data is collected or transmitted externally; all data remains local.
+> - Do not use this tool for commercial purposes or in violation of any laws or regulations.
+
 # LinkedIn Easy Apply Automation
 
 A personal-use Chrome extension that automates LinkedIn Easy Apply job applications with intelligent filtering, resume selection, and human-like behavior simulation.
