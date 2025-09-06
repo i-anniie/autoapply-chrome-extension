@@ -1,0 +1,40 @@
+{
+  "manifest_version": 3,
+  "name": "Auto Apply Extension v2",
+  "version": "1.0.0",
+  "description": "Personal-use LinkedIn Easy Apply automation with resume selection, ≤15-day filter, and stealth mode.",
+  "permissions": ["storage", "activeTab", "scripting", "alarms"],
+  "host_permissions": ["https://www.linkedin.com/*"],
+  "action": {
+    "default_popup": "src/popup/popup.html",
+    "default_title": "LinkedIn Easy Apply"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["src/config/userData.json"],
+      "matches": ["https://www.linkedin.com/*"]
+    }
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.linkedin.com/jobs/*"],
+      "js": [
+        "src/content/selectors.js",
+        "src/content/logger.js",
+        "src/content/storage.js",
+        "src/content/dateParser.js",
+        "src/content/stealth.js",
+        "src/content/throttle.js",
+        "src/content/jobScanner.js",
+        "src/content/resumePicker.js",
+        "src/content/formHandler.js",
+        "src/content/uiOverlay.js",
+        "src/content/content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "user": {
+    "fullName": "Your Name",
+    "email": "your.email@example.com",
+    "phone": "+1-XXX-XXX-XXXX",
+    "location": "Your City, Country",
+    "experienceYears": "2",
+    "linkedinUrl": "https://www.linkedin.com/in/yourprofile/",
+    "salaryExpectation": "Open to discussion"
+  },
+  "resumes": {
+    "frontend": "Your Frontend Resume Name",
+    "fullstack": "Your Fullstack Resume Name"
+  },
+  "titleBuckets": {
+    "frontend": [
+      "frontend developer",
+      "react developer",
+      "react.js developer",
+      "nextjs developer",
+      "next.js developer",
+      "ui developer",
+      "front-end developer",
+      "front end developer"
+    ],
+    "fullstack": [
+      "fullstack developer",
+      "full-stack developer",
+      "full stack developer",
+      "mern stack developer",
+      "nodejs developer",
+      "node.js developer",
+      "backend developer",
+      "javascript developer",
+      "typescript developer",
+      "software engineer"
+    ]
+  },
+  "locationFilter": {
+    "enabled": true,
+    "countries": ["India"],
+    "cities": [
+      "Mumbai",
+      "Delhi",
+      "Bangalore",
+      "Hyderabad",
+      "Chennai",
+      "Kolkata",
+      "Pune",
+      "Ahmedabad",
+      "Bhubaneswar",
+      "Noida",
+      "Jaipur",
+      "Surat",
+      "Lucknow",
+      "Kanpur",
+      "Nagpur",
+      "Indore",
+      "Thane",
+      "Bhopal",
+      "Visakhapatnam",
+      "Vadodara",
+      "Ghaziabad",
+      "Faridabad",
+      "Rajkot",
+      "Varanasi",
+      "Navi Mumbai",
+      "Nanded-Waghala",
+      "Aurangabad"
+    ],
+    "workTypes": ["hybrid", "remote", "on-site"],
+    "strictMode": false
+  },
+  "postingDateFilter": {
+    "maxDays": 15,
+    "order": "newest_to_oldest"
+  },
+  "additionalQuestionsDefaults": {
+    "yesNo": "Yes",
+    "mcq": "A",
+    "salary": "Open to discussion",
+    "workAuthorization": "Yes",
+    "relocation": "Yes",
+    "visaSponsorship": "No",
+    "remoteWork": "Yes",
+    "contractWork": "No",
+    "partTime": "No"
+  },
+  "throttling": {
+    "perActionDelayMs": {
+      "min": 8000,
+      "max": 15000
+    },
+    "batchSize": 8,
+    "batchCooldownMs": {
+      "min": 180000,
+      "max": 420000
+    },
+    "maxPerHour": 20,
+    "maxPerDay": 80
+  },
+  "behavior": {
+    "simulateTyping": true,
+    "typingDelayPerCharMs": {
+      "min": 50,
+      "max": 180
+    },
+    "randomScrolls": true,
+    "randomMouseNoise": true,
+    "scrollIntoViewBeforeInteract": true,
+    "microPauses": true,
+    "occasionalBackspace": true
+  },
+  "skipRules": {
+    "ifUnexpectedRequiredQuestion": true,
+    "ifMultipleAttachmentsRequired": true,
+    "blockedCompanies": [],
+    "blockedKeywords": []
+  },
+  "debug": {
+    "overlay": true,
+    "dryRun": true,
+    "logLevel": "info"
+  }
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LinkedIn Easy Apply</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1>LinkedIn Easy Apply</h1>
+        <div class="status-indicator" id="statusIndicator">
+          <span class="status-dot" id="statusDot"></span>
+          <span id="statusText">Stopped</span>
+        </div>
+      </header>
+
+      <main>
+        <div class="control-section">
+          <button id="startStopBtn" class="btn btn-primary">
+            <span id="btnText">Start Automation</span>
+          </button>
+
+          <div class="toggle-group">
+            <label class="toggle">
+              <input type="checkbox" id="dryRunToggle" checked />
+              <span class="toggle-slider"></span>
+              <span class="toggle-label">Dry Run Mode</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="stats-section">
+          <h3>Statistics</h3>
+          <div class="stats-grid">
+            <div class="stat-item">
+              <span class="stat-label">Applied</span>
+              <span class="stat-value" id="appliedCount">0</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-label">Skipped</span>
+              <span class="stat-value" id="skippedCount">0</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-label">Errors</span>
+              <span class="stat-value" id="errorCount">0</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-label">Processed</span>
+              <span class="stat-value" id="processedCount">0</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="config-section">
+          <h3>Configuration</h3>
+          <div class="config-actions">
+            <button id="importConfigBtn" class="btn btn-secondary">
+              Import Config
+            </button>
+            <button id="exportConfigBtn" class="btn btn-secondary">
+              Export Config
+            </button>
+            <button id="resetStatsBtn" class="btn btn-danger">
+              Reset Stats
+            </button>
+          </div>
+        </div>
+
+        <div class="info-section">
+          <div class="info-item">
+            <strong>Current Page:</strong>
+            <span id="currentPage">Not on LinkedIn Jobs</span>
+          </div>
+          <div class="info-item">
+            <strong>Last Run:</strong>
+            <span id="lastRun">Never</span>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <div class="warning">
+          ⚠️ Use responsibly. Test with a spare account first.
+        </div>
+      </footer>
+    </div>
+
+    <input
+      type="file"
+      id="configFileInput"
+      accept=".json"
+      style="display: none"
+    />
+
+    <script src="popup.js"></script>
+  </body>
+</html>
